@@ -11,7 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 @Entity
-@Table(name = "user")
+@Table(name = "user1")
 public class User implements Serializable {
 	
 	/**
@@ -26,7 +26,7 @@ public class User implements Serializable {
 	@Column(unique=true, name="user_name")
 	private String userName;
 	
-	@Column( name="password", nullable=false)
+	@Column( name="user_password", nullable=false)
 	private String password;
 	
 	@ManyToOne(fetch=FetchType.LAZY)

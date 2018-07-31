@@ -8,7 +8,7 @@ import com.spring.entity.User;
 
 public interface UserRepository extends JpaRepository<User, Integer> {
 	
-	 @Query(value = "Select user From user u where u.name=:userName")
+	 @Query(value = "Select user1 From User user1 where user1.userName=:userName")
 	 User getUserByName(@Param("userName") String userName);
 
 }

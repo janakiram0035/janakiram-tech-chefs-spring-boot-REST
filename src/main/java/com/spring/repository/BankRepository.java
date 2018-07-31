@@ -9,6 +9,6 @@ import com.spring.entity.Bank;
 
 public interface BankRepository  extends JpaRepository<Bank, Integer>{
 
-	 @Query(value = "Select bank From bank b where b.bankName=:bankName")
+	@Query(value = "Select bank From Bank bank where bank.bankName=:bankName")
 	 Bank getBankByName(@Param("bankName") String bankName);
 }
